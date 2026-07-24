@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="pardus-panel">
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="performance_cpu_nav_icon"><property name="visible">True</property><property name="icon-name">system-run-symbolic</property></object>
+  <object class="GtkImage" id="performance_memory_nav_icon"><property name="visible">True</property><property name="icon-name">media-flash-symbolic</property></object>
+  <object class="GtkImage" id="performance_disk_nav_icon"><property name="visible">True</property><property name="icon-name">drive-harddisk-symbolic</property></object>
+  <object class="GtkImage" id="performance_network_nav_icon"><property name="visible">True</property><property name="icon-name">network-wired-symbolic</property></object>
+  <object class="GtkBox" id="performance_content">
+    <property name="orientation">vertical</property>
+    <property name="spacing">14</property>
+    <property name="margin">16</property>
+    <style><class name="page-content"/><class name="standard-page"/></style>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">12</property>
+        <style><class name="page-header"/></style>
+        <child>
+          <object class="GtkImage">
+            <property name="icon-name">system-run-symbolic</property>
+            <property name="pixel-size">20</property>
+            <property name="valign">start</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">4</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Performance Monitor</property>
+                <property name="xalign">0</property>
+                <style><class name="page-title"/></style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Monitor CPU, memory, disk, and network activity in real time.</property>
+                <property name="xalign">0</property>
+                <property name="wrap">True</property>
+                <style><class name="page-description"/></style>
+              </object>
+            </child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="vexpand">True</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">8</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label" translatable="yes">Performance</property>
+            <property name="xalign">0</property>
+            <style><class name="section-title"/></style>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="performance_section_nav">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">4</property>
+            <property name="halign">end</property>
+            <child><object class="GtkToggleButton" id="performance_cpu_nav"><property name="label" translatable="yes">CPU</property><property name="image">performance_cpu_nav_icon</property><property name="always-show-image">True</property></object></child>
+            <child><object class="GtkToggleButton" id="performance_memory_nav"><property name="label" translatable="yes">Memory</property><property name="image">performance_memory_nav_icon</property><property name="always-show-image">True</property></object></child>
+            <child><object class="GtkToggleButton" id="performance_disk_nav"><property name="label" translatable="yes">Disk</property><property name="image">performance_disk_nav_icon</property><property name="always-show-image">True</property></object></child>
+            <child><object class="GtkToggleButton" id="performance_network_nav"><property name="label" translatable="yes">Network</property><property name="image">performance_network_nav_icon</property><property name="always-show-image">True</property></object></child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow" id="performance_scroller">
+        <property name="hscrollbar-policy">never</property>
+        <property name="vscrollbar-policy">automatic</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="shadow-type">none</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">24</property>
+            <property name="margin-top">14</property>
+            <property name="margin-bottom">14</property>
+            <child>
+              <object class="GtkBox" id="performance_cpu_section">
+                <property name="orientation">vertical</property>
+                <property name="spacing">10</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="spacing">8</property>
+                    <child><object class="GtkImage"><property name="icon-name">system-run-symbolic</property></object></child>
+                    <child><object class="GtkLabel"><property name="label" translatable="yes">CPU</property><property name="xalign">0</property><style><class name="performance-anchor-title"/></style></object></child>
+                  </object>
+                </child>
+                <child><object class="GtkSeparator"><property name="orientation">horizontal</property></object></child>
+                <child>
+                  <object class="GtkFrame">
+                    <property name="shadow-type">none</property>
+                    <style><class name="performance-page-frame"/></style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">8</property>
+                        <property name="margin">10</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">6</property>
+                            <style><class name="performance-graph-card"/></style>
+                            <child><object class="GtkLabel"><property name="label" translatable="yes">Average CPU usage</property><property name="xalign">0</property><style><class name="graph-title"/></style></object></child>
+                            <child><object class="GtkLabel" id="performance_cpu_value"><property name="label">—</property><property name="xalign">0</property><style><class name="hero-value"/></style></object></child>
+                            <child>
+                              <object class="GtkBox"><property name="spacing">12</property>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Temperature</property><property name="xalign">0</property><style><class name="muted-label"/></style></object></child>
+                                <child><object class="GtkLabel" id="performance_temperature_value"><property name="label">—</property><property name="xalign">0</property></object></child>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Frequency</property><property name="xalign">0</property><style><class name="muted-label"/></style></object></child>
+                                <child><object class="GtkLabel" id="performance_frequency_value"><property name="label">—</property><property name="xalign">0</property></object></child>
+                              </object>
+                            </child>
+                            <child><object class="GtkBox" id="performance_cpu_graph"><property name="orientation">vertical</property><style><class name="performance-graph"/></style></object></child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkFlowBox" id="performance_core_cards">
+                            <property name="margin-top">8</property>
+                            <property name="row-spacing">8</property>
+                            <property name="column-spacing">8</property>
+                            <property name="homogeneous">True</property>
+                            <property name="min-children-per-line">2</property>
+                            <property name="max-children-per-line">4</property>
+                            <property name="selection-mode">none</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="performance_memory_section">
+                <property name="orientation">vertical</property>
+                <property name="spacing">10</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="spacing">8</property>
+                    <child><object class="GtkImage"><property name="icon-name">media-flash-symbolic</property></object></child>
+                    <child><object class="GtkLabel"><property name="label" translatable="yes">RAM</property><property name="xalign">0</property><style><class name="performance-anchor-title"/></style></object></child>
+                  </object>
+                </child>
+                <child><object class="GtkSeparator"><property name="orientation">horizontal</property></object></child>
+                <child>
+                  <object class="GtkFrame">
+                    <property name="shadow-type">none</property>
+                    <style><class name="performance-page-frame"/></style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="margin">10</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">6</property>
+                            <style><class name="performance-graph-card"/></style>
+                            <child><object class="GtkLabel"><property name="label" translatable="yes">Memory usage</property><property name="xalign">0</property><style><class name="graph-title"/></style></object></child>
+                            <child><object class="GtkLabel" id="performance_memory_value"><property name="label">—</property><property name="xalign">0</property><style><class name="hero-value"/></style></object></child>
+                            <child><object class="GtkLabel" id="performance_memory_detail"><property name="label">—</property><property name="xalign">0</property><style><class name="muted-label"/></style></object></child>
+                            <child><object class="GtkBox" id="performance_memory_graph"><property name="orientation">vertical</property><style><class name="performance-graph"/></style></object></child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="performance_disk_section">
+                <property name="orientation">vertical</property>
+                <property name="spacing">10</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="spacing">8</property>
+                    <child><object class="GtkImage"><property name="icon-name">drive-harddisk-symbolic</property></object></child>
+                    <child><object class="GtkLabel"><property name="label" translatable="yes">Disk</property><property name="xalign">0</property><style><class name="performance-anchor-title"/></style></object></child>
+                  </object>
+                </child>
+                <child><object class="GtkSeparator"><property name="orientation">horizontal</property></object></child>
+                <child>
+                  <object class="GtkFrame">
+                    <property name="shadow-type">none</property>
+                    <style><class name="performance-page-frame"/></style>
+                    <child>
+                      <object class="GtkFlowBox" id="performance_disk_cards">
+                        <property name="margin">10</property>
+                        <property name="row-spacing">8</property>
+                        <property name="column-spacing">8</property>
+                        <property name="homogeneous">True</property>
+                        <property name="min-children-per-line">1</property>
+                        <property name="max-children-per-line">2</property>
+                        <property name="selection-mode">none</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="performance_network_section">
+                <property name="orientation">vertical</property>
+                <property name="spacing">10</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="spacing">8</property>
+                    <child><object class="GtkImage"><property name="icon-name">network-wired-symbolic</property></object></child>
+                    <child><object class="GtkLabel"><property name="label" translatable="yes">Network</property><property name="xalign">0</property><style><class name="performance-anchor-title"/></style></object></child>
+                  </object>
+                </child>
+                <child><object class="GtkSeparator"><property name="orientation">horizontal</property></object></child>
+                <child>
+                  <object class="GtkFrame">
+                    <property name="shadow-type">none</property>
+                    <style><class name="performance-page-frame"/></style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="margin">10</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">6</property>
+                            <style><class name="performance-graph-card"/></style>
+                            <child>
+                              <object class="GtkGrid"><property name="column-spacing">12</property><property name="row-spacing">6</property>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Total sent</property><property name="xalign">0</property><style><class name="muted-label"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">0</property></packing></child>
+                                <child><object class="GtkLabel" id="performance_sent_total"><property name="label">—</property><property name="xalign">0</property></object><packing><property name="left-attach">1</property><property name="top-attach">0</property></packing></child>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Total received</property><property name="xalign">0</property><style><class name="muted-label"/></style></object><packing><property name="left-attach">2</property><property name="top-attach">0</property></packing></child>
+                                <child><object class="GtkLabel" id="performance_received_total"><property name="label">—</property><property name="xalign">0</property></object><packing><property name="left-attach">3</property><property name="top-attach">0</property></packing></child>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Packets (in / out)</property><property name="xalign">0</property><style><class name="muted-label"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">1</property></packing></child>
+                                <child><object class="GtkLabel" id="performance_packets"><property name="label">—</property><property name="xalign">0</property></object><packing><property name="left-attach">1</property><property name="top-attach">1</property></packing></child>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Errors (in / out)</property><property name="xalign">0</property><style><class name="muted-label"/></style></object><packing><property name="left-attach">2</property><property name="top-attach">1</property></packing></child>
+                                <child><object class="GtkLabel" id="performance_errors"><property name="label">—</property><property name="xalign">0</property></object><packing><property name="left-attach">3</property><property name="top-attach">1</property></packing></child>
+                                <child><object class="GtkLabel"><property name="label" translatable="yes">Drops (in / out)</property><property name="xalign">0</property><style><class name="muted-label"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">2</property></packing></child>
+                                <child><object class="GtkLabel" id="performance_drops"><property name="label">—</property><property name="xalign">0</property></object><packing><property name="left-attach">1</property><property name="top-attach">2</property></packing></child>
+                              </object>
+                            </child>
+                            <child><object class="GtkOverlay" id="performance_network_graph"><style><class name="performance-graph"/></style></object></child>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="orientation">horizontal</property>
+                                <property name="spacing">12</property>
+                                <property name="halign">start</property>
+                                <property name="margin-top">6</property>
+                                <child>
+                                  <object class="GtkBox">
+                                    <property name="orientation">vertical</property>
+                                    <child><object class="GtkLabel"><property name="label" translatable="yes">Upload</property><property name="xalign">0</property><style><class name="muted-label"/><class name="graph-upload-title"/></style></object></child>
+                                    <child><object class="GtkLabel" id="performance_upload_value"><property name="label">—</property><property name="xalign">0</property></object></child>
+                                  </object>
+                                </child>
+                                <child><object class="GtkSeparator"><property name="orientation">vertical</property></object></child>
+                                <child>
+                                  <object class="GtkBox">
+                                    <property name="orientation">vertical</property>
+                                    <child><object class="GtkLabel"><property name="label" translatable="yes">Download</property><property name="xalign">0</property><style><class name="muted-label"/><class name="graph-download-title"/></style></object></child>
+                                    <child><object class="GtkLabel" id="performance_download_value"><property name="label">—</property><property name="xalign">0</property></object></child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+      </packing>
+    </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+      </packing>
+    </child>
+    <child><object class="GtkLabel" id="performance_status"><property name="xalign">0</property><style><class name="muted-label"/><class name="status-bar"/></style></object></child>
+  </object>
+</interface>

@@ -1,0 +1,885 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR abdmelihakdeniz
+# This file is distributed under the same license as the pardus-panel package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pardus-panel 1.0\n"
+"Report-Msgid-Bugs-To: melowiann@gmail.com\n"
+"POT-Creation-Date: 2026-07-24 19:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pardus_panel/gtk/pages/autostart.py:55
+#, python-brace-format
+msgid "{count} entries"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/autostart.py:62
+#, python-brace-format
+msgid "Enable {name}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/autostart.py:79
+#: src/pardus_panel/gtk/pages/services.py:154
+#: src/pardus_panel/data/ui/Logs.ui:72 src/pardus_panel/data/ui/Process.ui:140
+msgid "User"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/autostart.py:79
+#: src/pardus_panel/gtk/pages/services.py:154
+#: src/pardus_panel/data/ui/Logs.ui:72
+msgid "System"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/autostart.py:87
+msgid "Delete startup application"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/autostart.py:131
+#, python-brace-format
+msgid "Autostart action failed: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:14 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Emergency"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:15 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Alert"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:16 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Critical"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:17 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Error"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:18 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Warning"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:19 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Notice"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:20 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Info"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:21 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Debug"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:57
+msgid "Loading logs…"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:85
+#, python-brace-format
+msgid "Time: {value}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:86
+#, python-brace-format
+msgid "Level: {value}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:87
+#, python-brace-format
+msgid "Source: {value}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:112
+#: src/pardus_panel/gtk/pages/logs.py:114
+#: src/pardus_panel/gtk/pages/logs.py:116
+#: src/pardus_panel/gtk/pages/power.py:22
+#: src/pardus_panel/gtk/pages/power.py:74
+#: src/pardus_panel/gtk/pages/power.py:76
+#: src/pardus_panel/gtk/pages/power.py:81
+#: src/pardus_panel/gtk/pages/power.py:88
+#: src/pardus_panel/gtk/pages/power.py:120
+#: src/pardus_panel/gtk/pages/processes.py:151
+#: src/pardus_panel/gtk/pages/processes.py:157
+#: src/pardus_panel/gtk/pages/services.py:157
+#: src/pardus_panel/gtk/pages/services.py:158
+#: src/pardus_panel/gtk/pages/services.py:159
+#: src/pardus_panel/gtk/pages/system_info.py:57
+msgid "Unknown"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:119
+#, python-brace-format
+msgid "{count} log entries"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:121
+msgid "No log entries found"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/logs.py:125
+#, python-brace-format
+msgid "Could not load logs: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/performance.py:192
+#: src/pardus_panel/gtk/pages/performance.py:197
+#: src/pardus_panel/gtk/pages/power.py:67
+#: src/pardus_panel/gtk/pages/power.py:68
+#: src/pardus_panel/gtk/pages/power.py:69
+#: src/pardus_panel/gtk/pages/system_info.py:60
+#: src/pardus_panel/data/ui/Power.ui:60
+msgid "Unavailable"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/performance.py:213
+msgid "No CPU core data"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/performance.py:220
+#, python-brace-format
+msgid "Core {number}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/performance.py:242
+msgid "No physical disks found"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/performance.py:247
+#, python-brace-format
+msgid "Could not refresh: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/performance.py:318
+msgid "Calculating…"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:18
+msgid "Charging"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:19
+msgid "Discharging"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:20
+msgid "Not charging"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:21
+msgid "Full"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:25 src/pardus_panel/data/ui/Power.ui:61
+msgid "Power saver"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:26 src/pardus_panel/data/ui/Power.ui:61
+msgid "Balanced"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:27
+#: src/pardus_panel/data/ui/MainWindow.ui:64
+#: src/pardus_panel/data/ui/Performance.ui:59
+#: src/pardus_panel/data/ui/Power.ui:61
+msgid "Performance"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:56
+msgid "Loading power information…"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:66
+msgid "No battery detected"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:114
+#, python-brace-format
+msgid "Could not load power information: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/power.py:123
+#, python-brace-format
+msgid "{hours} h {minutes} min"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:31
+#: src/pardus_panel/gtk/pages/services.py:28
+msgid "Running"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:32
+msgid "Sleeping"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:33
+msgid "Disk sleep"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:34
+msgid "Stopped"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:35
+msgid "Tracing stop"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:36
+msgid "Zombie"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:37
+#: src/pardus_panel/gtk/pages/services.py:30
+msgid "Dead"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:38
+msgid "Wake kill"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:39
+msgid "Waking"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:40
+msgid "Parked"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:41
+msgid "Idle"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:42
+msgid "Locked"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:43
+msgid "Waiting"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:165
+#, python-brace-format
+msgid "{count} processes"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:195
+#, python-brace-format
+msgid "End {name}?"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:198
+#, python-brace-format
+msgid "PID {pid} will be asked to stop."
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:217
+msgid "Process ended"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:218
+msgid "Process killed after timeout"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:219
+msgid "Process already gone"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:220
+msgid "Permission denied"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:221
+msgid "Process did not stop"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:222
+msgid "PID now belongs to another process"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:233
+#, python-brace-format
+msgid "Could not end process: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/processes.py:237
+#, python-brace-format
+msgid "Could not load processes: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:20
+msgid "Active"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:21
+#: src/pardus_panel/gtk/pages/services.py:35
+#: src/pardus_panel/gtk/pages/services.py:36
+#: src/pardus_panel/gtk/pages/services.py:37
+msgid "Reloading"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:22
+msgid "Inactive"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:23
+msgid "Failed"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:24
+msgid "Activating"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:25
+msgid "Deactivating"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:26
+msgid "Maintenance"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:27
+msgid "Refreshing"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:29
+msgid "Exited"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:31
+msgid "Waiting for condition"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:32
+msgid "Preparing to start"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:33
+msgid "Starting"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:34
+msgid "Finishing startup"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:38
+msgid "Restarting automatically"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:39
+#: src/pardus_panel/gtk/pages/services.py:40
+#: src/pardus_panel/gtk/pages/services.py:41
+#: src/pardus_panel/gtk/pages/services.py:42
+msgid "Stopping"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:43
+#: src/pardus_panel/gtk/pages/services.py:44
+#: src/pardus_panel/gtk/pages/services.py:45
+#: src/pardus_panel/gtk/pages/services.py:46
+msgid "Finishing shutdown"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:47
+msgid "Cleaning"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:48
+msgid "Enabled"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:49
+msgid "Enabled for this session"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:50
+msgid "Linked"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:51
+msgid "Linked for this session"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:52
+msgid "Alias"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:53
+msgid "Masked"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:54
+msgid "Masked for this session"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:55
+msgid "Static"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:56
+msgid "Indirect"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:57
+msgid "Disabled"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:58
+msgid "Generated"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:59
+msgid "Transient"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:60
+msgid "Invalid"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:63
+#: src/pardus_panel/data/ui/Services.ui:108
+msgid "Start"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:64
+#: src/pardus_panel/data/ui/Services.ui:109
+msgid "Stop"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:65
+#: src/pardus_panel/data/ui/Services.ui:110
+msgid "Restart"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:66
+#: src/pardus_panel/data/ui/Services.ui:122
+msgid "Enable"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:67
+#: src/pardus_panel/data/ui/Services.ui:123
+msgid "Disable"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:108
+msgid "Loading services…"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:164
+#, python-brace-format
+msgid "{count} services"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:166
+msgid "No services found"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:201
+#, python-brace-format
+msgid "{action} completed for {unit}."
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:211
+#, python-brace-format
+msgid "{action} completed"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:219
+#, python-brace-format
+msgid "{action} failed for {unit}."
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:228
+#, python-brace-format
+msgid "{action} failed"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:230
+#, python-brace-format
+msgid ""
+"The operation could not be completed for {unit}.\n"
+"\n"
+"Reason: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:235
+msgid "Could not load services"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/services.py:241
+#, python-brace-format
+msgid ""
+"The service list could not be loaded.\n"
+"\n"
+"Reason: {error}"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/system_info.py:46
+msgid "Loading system information…"
+msgstr ""
+
+#: src/pardus_panel/gtk/pages/system_info.py:77
+#, python-brace-format
+msgid "Could not load system information: {error}"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:6
+msgid "Add Startup Application"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:19
+msgid "Name"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:20
+msgid "Display name"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:21
+msgid "Command"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:22
+msgid "Command to execute"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:28
+#: src/pardus_panel/data/ui/Process.ui:31
+msgid "Cancel"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:29
+msgid "Add"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:62
+msgid "Autostart Management"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:69
+msgid ""
+"Manage applications that start automatically when you log in. User entries "
+"can be deleted; system entries cannot be modified directly."
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:86
+msgid "Startup Applications"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:96
+msgid "Add startup application"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Autostart.ui:127
+#: src/pardus_panel/data/ui/Logs.ui:95 src/pardus_panel/data/ui/Process.ui:151
+#: src/pardus_panel/data/ui/Services.ui:126
+msgid "Not loaded"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:6
+msgid "Log Details"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:41 src/pardus_panel/data/ui/Services.ui:30
+msgid "Close"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:60
+msgid "System Logs"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:61
+msgid ""
+"Show up to 300 recent journal entries. Access depends on the current user's "
+"journal permissions."
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:71 src/pardus_panel/data/ui/Services.ui:86
+msgid "Scope"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:73 src/pardus_panel/data/ui/Logs.ui:87
+msgid "Level"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:74
+msgid "All"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:75
+msgid "Search source or message; press Enter"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:76
+msgid "Refresh logs"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:86
+msgid "Time"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:88
+msgid "Source"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Logs.ui:89
+msgid "Message"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:5
+#: src/pardus_panel/data/ui/MainWindow.ui:11
+#: src/pardus_panel/data/ui/MainWindow.ui:37
+msgid "Pardus Panel"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:38
+msgid "System Panel"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:58
+msgid "Processes"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:70
+msgid "Autostart"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:76
+msgid "Services"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:82
+msgid "Logs"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:88
+msgid "Power"
+msgstr ""
+
+#: src/pardus_panel/data/ui/MainWindow.ui:94
+#: src/pardus_panel/data/ui/SystemInfo.ui:34
+msgid "System Information"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:31
+msgid "Performance Monitor"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:38
+msgid "Monitor CPU, memory, disk, and network activity in real time."
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:73
+#: src/pardus_panel/data/ui/Performance.ui:107
+msgid "CPU"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:74
+#: src/pardus_panel/data/ui/Process.ui:141
+#: src/pardus_panel/data/ui/SystemInfo.ui:113
+msgid "Memory"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:75
+#: src/pardus_panel/data/ui/Performance.ui:200
+msgid "Disk"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:76
+#: src/pardus_panel/data/ui/Performance.ui:231
+msgid "Network"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:125
+msgid "Average CPU usage"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:129
+msgid "Temperature"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:131
+msgid "Frequency"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:163
+msgid "RAM"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:180
+msgid "Memory usage"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:250
+msgid "Total sent"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:252
+msgid "Total received"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:254
+msgid "Packets (in / out)"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:256
+msgid "Errors (in / out)"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:258
+msgid "Drops (in / out)"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:272
+msgid "Upload"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Performance.ui:280
+msgid "Download"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:14
+msgid "Power and Battery"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:15
+msgid ""
+"Battery health is calculated from the current full capacity and its design "
+"capacity."
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:30
+msgid "Charge"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:39
+msgid "Battery health"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:41
+msgid "Status"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:43
+msgid "Estimated time"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Power.ui:54
+msgid "Power profile"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:32
+msgid "End Process"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:65
+msgid "Process Monitor"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:72
+msgid ""
+"View running applications and end processes that are no longer responding."
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:94
+msgid "Search processes"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:102
+msgid "Refresh processes"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:110
+msgid "Terminate"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:138
+msgid "PID"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:139
+msgid "Application"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:142
+msgid "CPU %"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Process.ui:143
+#: src/pardus_panel/data/ui/Services.ui:89
+msgid "State"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:58
+msgid "Systemd Services"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:59
+msgid ""
+"Inspect system and user services. System actions may request authorization "
+"through PolicyKit."
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:71
+msgid "Search services"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:72
+msgid "Refresh services"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:87
+msgid "Service"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:88
+msgid "Description"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:90
+msgid "Detail"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:91
+msgid "Startup"
+msgstr ""
+
+#: src/pardus_panel/data/ui/Services.ui:105
+msgid "Service actions"
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:35
+msgid "View operating system and hardware details."
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:54
+msgid "Operating system"
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:67
+msgid "Hostname"
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:92
+msgid "Kernel"
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:99
+msgid "Processor"
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:106
+msgid "Graphics"
+msgstr ""
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:120
+msgid "System disk"
+msgstr ""

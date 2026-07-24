@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="pardus-panel">
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="logs_refresh_image"><property name="visible">True</property><property name="icon-name">view-refresh-symbolic</property></object>
+  <object class="GtkDialog" id="logs_detail_dialog">
+    <property name="title" translatable="yes">Log Details</property>
+    <property name="modal">True</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="default-width">620</property>
+    <property name="default-height">360</property>
+    <style><class name="app-dialog"/></style>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <property name="margin">16</property>
+        <child><object class="GtkLabel" id="logs_detail_time"><property name="xalign">0</property><property name="selectable">True</property><style><class name="muted-label"/></style></object></child>
+        <child><object class="GtkLabel" id="logs_detail_level"><property name="xalign">0</property><property name="selectable">True</property><style><class name="muted-label"/></style></object></child>
+        <child><object class="GtkLabel" id="logs_detail_source"><property name="xalign">0</property><property name="selectable">True</property><style><class name="section-title"/></style></object></child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="vexpand">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkTextView" id="logs_detail_message">
+                <property name="editable">False</property>
+                <property name="cursor-visible">False</property>
+                <property name="wrap-mode">word-char</property>
+                <property name="left-margin">10</property>
+                <property name="right-margin">10</property>
+                <property name="top-margin">10</property>
+                <property name="bottom-margin">10</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="layout-style">end</property>
+            <child><object class="GtkButton" id="logs_detail_close"><property name="label" translatable="yes">Close</property></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-7">logs_detail_close</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkBox" id="logs_content">
+    <property name="orientation">vertical</property>
+    <property name="spacing">14</property>
+    <property name="margin">16</property>
+    <style><class name="page-content"/><class name="standard-page"/></style>
+    <child>
+      <object class="GtkBox"><property name="orientation">horizontal</property><property name="spacing">12</property><style><class name="page-header"/></style>
+        <child><object class="GtkImage"><property name="icon-name">text-x-generic-symbolic</property><property name="pixel-size">20</property><property name="valign">start</property></object></child>
+        <child>
+          <object class="GtkBox"><property name="orientation">vertical</property><property name="spacing">4</property>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">System Logs</property><property name="xalign">0</property><style><class name="page-title"/></style></object></child>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Show up to 300 recent journal entries. Access depends on the current user's journal permissions.</property><property name="xalign">0</property><property name="wrap">True</property><style><class name="page-description"/></style></object></child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame"><property name="shadow-type">none</property><style><class name="toolbar-card"/></style>
+        <child>
+          <object class="GtkBox"><property name="orientation">horizontal</property><property name="spacing">8</property>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Scope</property><style><class name="muted-label"/></style></object></child>
+            <child><object class="GtkComboBoxText" id="logs_scope"><property name="can-focus">True</property><property name="width-request">110</property><items><item id="system" translatable="yes">System</item><item id="user" translatable="yes">User</item></items></object></child>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Level</property><property name="margin-start">4</property><style><class name="muted-label"/></style></object></child>
+            <child><object class="GtkComboBoxText" id="logs_priority"><property name="can-focus">True</property><property name="width-request">120</property><items><item id="all" translatable="yes">All</item><item id="emerg" translatable="yes">Emergency</item><item id="alert" translatable="yes">Alert</item><item id="crit" translatable="yes">Critical</item><item id="err" translatable="yes">Error</item><item id="warning" translatable="yes">Warning</item><item id="notice" translatable="yes">Notice</item><item id="info" translatable="yes">Info</item><item id="debug" translatable="yes">Debug</item></items></object></child>
+            <child><object class="GtkSearchEntry" id="logs_search"><property name="hexpand">True</property><property name="placeholder-text" translatable="yes">Search source or message; press Enter</property></object><packing><property name="expand">True</property><property name="fill">True</property></packing></child>
+            <child><object class="GtkButton" id="logs_refresh"><property name="image">logs_refresh_image</property><property name="always-show-image">True</property><property name="tooltip-text" translatable="yes">Refresh logs</property><style><class name="image-button"/></style></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame"><property name="shadow-type">none</property><style><class name="table-card"/></style>
+        <child><object class="GtkScrolledWindow"><property name="shadow-type">none</property><property name="vexpand">True</property><property name="hscrollbar-policy">never</property><child>
+          <object class="GtkTreeView" id="logs_view">
+            <property name="headers-clickable">True</property><property name="enable-grid-lines">none</property><style><class name="data-table"/></style>
+            <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Time</property><property name="sizing">fixed</property><property name="fixed-width">160</property><property name="sort-column-id">0</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">0</attribute></attributes></child></object></child>
+            <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Level</property><property name="sizing">fixed</property><property name="fixed-width">100</property><property name="sort-column-id">1</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">1</attribute></attributes></child></object></child>
+            <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Source</property><property name="sizing">fixed</property><property name="fixed-width">150</property><property name="sort-column-id">2</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">2</attribute></attributes></child></object></child>
+            <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Message</property><property name="sizing">fixed</property><property name="fixed-width">260</property><property name="expand">True</property><property name="sort-column-id">3</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">3</attribute></attributes></child></object></child>
+          </object>
+        </child></object></child>
+      </object>
+      <packing><property name="expand">True</property><property name="fill">True</property></packing>
+    </child>
+    <child><object class="GtkLabel" id="logs_status"><property name="label" translatable="yes">Not loaded</property><property name="xalign">0</property><style><class name="muted-label"/><class name="status-bar"/></style></object></child>
+  </object>
+</interface>

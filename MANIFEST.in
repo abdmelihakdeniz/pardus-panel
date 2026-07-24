@@ -1,0 +1,10 @@
+include Makefile
+include LICENSE
+include debian/changelog
+include debian/control
+include debian/copyright
+include debian/install
+include debian/rules
+include debian/source/format
+recursive-include po *.po *.pot
+recursive-include tools *.sh

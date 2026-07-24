@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="pardus-panel">
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="services_refresh_image"><property name="visible">True</property><property name="icon-name">view-refresh-symbolic</property></object>
+  <object class="GtkImage" id="services_start_image"><property name="visible">True</property><property name="icon-name">media-playback-start-symbolic</property></object>
+  <object class="GtkImage" id="services_stop_image"><property name="visible">True</property><property name="icon-name">media-playback-stop-symbolic</property></object>
+  <object class="GtkImage" id="services_restart_image"><property name="visible">True</property><property name="icon-name">view-refresh-symbolic</property></object>
+  <object class="GtkDialog" id="services_message_dialog">
+    <property name="modal">True</property><property name="destroy-with-parent">True</property><property name="resizable">False</property>
+    <style><class name="app-dialog"/></style>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox">
+            <property name="spacing">16</property><property name="margin">18</property>
+            <child><object class="GtkImage" id="services_message_icon"><property name="pixel-size">48</property><property name="valign">start</property></object></child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property><property name="spacing">6</property>
+                <child><object class="GtkLabel" id="services_message_title"><property name="xalign">0</property><property name="wrap">True</property><style><class name="page-title"/></style></object></child>
+                <child><object class="GtkLabel" id="services_message_detail"><property name="xalign">0</property><property name="wrap">True</property><property name="selectable">True</property><style><class name="muted-label"/></style></object></child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="layout-style">end</property>
+            <child><object class="GtkButton" id="services_message_close"><property name="label" translatable="yes">Close</property><property name="can-default">True</property><property name="has-default">True</property></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <action-widgets><action-widget response="-7">services_message_close</action-widget></action-widgets>
+  </object>
+  <object class="GtkBox" id="services_content">
+    <property name="orientation">vertical</property>
+    <property name="spacing">14</property>
+    <property name="margin">16</property>
+    <style><class name="page-content"/><class name="standard-page"/></style>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">12</property>
+        <style><class name="page-header"/></style>
+        <child>
+          <object class="GtkImage">
+            <property name="icon-name">applications-system-symbolic</property>
+            <property name="pixel-size">20</property>
+            <property name="valign">start</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">4</property>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Systemd Services</property><property name="xalign">0</property><style><class name="page-title"/></style></object></child>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Inspect system and user services. System actions may request authorization through PolicyKit.</property><property name="xalign">0</property><property name="wrap">True</property><style><class name="page-description"/></style></object></child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="shadow-type">none</property>
+        <style><class name="toolbar-card"/></style>
+        <child>
+          <object class="GtkBox"><property name="spacing">8</property>
+            <child><object class="GtkSearchEntry" id="services_search"><property name="hexpand">True</property><property name="placeholder-text" translatable="yes">Search services</property></object><packing><property name="expand">True</property><property name="fill">True</property></packing></child>
+            <child><object class="GtkButton" id="services_refresh"><property name="image">services_refresh_image</property><property name="always-show-image">True</property><property name="tooltip-text" translatable="yes">Refresh services</property><style><class name="image-button"/></style></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="shadow-type">none</property>
+        <style><class name="table-card"/></style>
+        <child>
+          <object class="GtkScrolledWindow"><property name="shadow-type">none</property><property name="vexpand">True</property><property name="hscrollbar-policy">automatic</property>
+            <child>
+              <object class="GtkTreeView" id="services_view">
+                <property name="headers-clickable">True</property><property name="enable-grid-lines">none</property><style><class name="data-table"/></style>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Scope</property><property name="sizing">fixed</property><property name="fixed-width">70</property><property name="sort-column-id">0</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">0</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Service</property><property name="sizing">fixed</property><property name="fixed-width">170</property><property name="expand">True</property><property name="sort-column-id">1</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">1</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn" id="services_description_column"><property name="title" translatable="yes">Description</property><property name="sizing">fixed</property><property name="fixed-width">180</property><property name="expand">True</property><property name="sort-column-id">2</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">2</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">State</property><property name="sizing">fixed</property><property name="fixed-width">75</property><property name="sort-column-id">3</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">3</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn" id="services_detail_column"><property name="title" translatable="yes">Detail</property><property name="sizing">fixed</property><property name="fixed-width">80</property><property name="sort-column-id">4</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">4</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Startup</property><property name="sizing">fixed</property><property name="fixed-width">85</property><property name="sort-column-id">5</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">5</attribute></attributes></child></object></child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing><property name="expand">True</property><property name="fill">True</property></packing>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="shadow-type">none</property>
+        <style><class name="toolbar-card"/></style>
+        <child>
+          <object class="GtkBox"><property name="orientation">horizontal</property><property name="spacing">8</property>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Service actions</property><property name="xalign">0</property><style><class name="section-title"/></style></object><packing><property name="expand">True</property><property name="fill">True</property></packing></child>
+            <child>
+              <object class="GtkBox"><property name="spacing">6</property>
+                <child><object class="GtkButton" id="services_start"><property name="label" translatable="yes">Start</property><property name="image">services_start_image</property><property name="always-show-image">True</property></object></child>
+                <child><object class="GtkButton" id="services_stop"><property name="label" translatable="yes">Stop</property><property name="image">services_stop_image</property><property name="always-show-image">True</property></object></child>
+                <child><object class="GtkButton" id="services_restart"><property name="label" translatable="yes">Restart</property><property name="image">services_restart_image</property><property name="always-show-image">True</property></object></child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparator">
+                <property name="orientation">vertical</property>
+                <property name="margin-top">4</property>
+                <property name="margin-bottom">4</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox"><property name="spacing">6</property>
+                <child><object class="GtkButton" id="services_enable"><property name="label" translatable="yes">Enable</property></object></child>
+                <child><object class="GtkButton" id="services_disable"><property name="label" translatable="yes">Disable</property></object></child>
+              </object>
+            </child>
+            <child><object class="GtkLabel" id="services_status"><property name="label" translatable="yes">Not loaded</property><property name="xalign">1</property><property name="ellipsize">end</property><property name="max-width-chars">28</property><style><class name="muted-label"/></style></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

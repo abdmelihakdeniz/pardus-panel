@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="pardus-panel">
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="autostart_add_image"><property name="visible">True</property><property name="icon-name">list-add-symbolic</property></object>
+  <object class="GtkDialog" id="autostart_add_dialog">
+    <property name="title" translatable="yes">Add Startup Application</property>
+    <property name="modal">True</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="resizable">False</property>
+    <style><class name="app-dialog"/></style>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkGrid">
+            <property name="column-spacing">12</property>
+            <property name="row-spacing">12</property>
+            <property name="margin">16</property>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Name</property><property name="xalign">0</property></object><packing><property name="left-attach">0</property><property name="top-attach">0</property></packing></child>
+            <child><object class="GtkEntry" id="autostart_name_entry"><property name="placeholder-text" translatable="yes">Display name</property><property name="activates-default">True</property></object><packing><property name="left-attach">1</property><property name="top-attach">0</property></packing></child>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Command</property><property name="xalign">0</property></object><packing><property name="left-attach">0</property><property name="top-attach">1</property></packing></child>
+            <child><object class="GtkEntry" id="autostart_command_entry"><property name="placeholder-text" translatable="yes">Command to execute</property><property name="activates-default">True</property></object><packing><property name="left-attach">1</property><property name="top-attach">1</property></packing></child>
+          </object>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="layout-style">end</property>
+            <child><object class="GtkButton" id="autostart_cancel_button"><property name="label" translatable="yes">Cancel</property></object></child>
+            <child><object class="GtkButton" id="autostart_confirm_button"><property name="label" translatable="yes">Add</property><property name="can-default">True</property><property name="has-default">True</property><style><class name="suggested-action"/></style></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-6">autostart_cancel_button</action-widget>
+      <action-widget response="-5">autostart_confirm_button</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkBox" id="autostart_content">
+    <property name="orientation">vertical</property>
+    <property name="spacing">14</property>
+    <property name="margin">16</property>
+    <style><class name="page-content"/><class name="standard-page"/></style>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">12</property>
+        <style><class name="page-header"/></style>
+        <child>
+          <object class="GtkImage">
+            <property name="icon-name">media-playback-start-symbolic</property>
+            <property name="pixel-size">20</property>
+            <property name="valign">start</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">4</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Autostart Management</property>
+                <property name="xalign">0</property>
+                <style><class name="page-title"/></style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Manage applications that start automatically when you log in. User entries can be deleted; system entries cannot be modified directly.</property>
+                <property name="xalign">0</property>
+                <property name="wrap">True</property>
+                <style><class name="page-description"/></style>
+              </object>
+            </child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">8</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label" translatable="yes">Startup Applications</property>
+            <property name="xalign">0</property>
+            <style><class name="section-title"/></style>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="autostart_add_button">
+            <property name="image">autostart_add_image</property>
+            <property name="always-show-image">True</property>
+            <property name="tooltip-text" translatable="yes">Add startup application</property>
+            <property name="valign">center</property>
+            <style><class name="image-button"/><class name="suggested-action"/></style>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="shadow-type">none</property>
+        <style><class name="table-card"/></style>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="vexpand">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="vscrollbar-policy">automatic</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkListBox" id="autostart_view">
+                <property name="vexpand">True</property>
+                <property name="hexpand">True</property>
+                <property name="selection-mode">none</property>
+                <property name="activate-on-single-click">False</property>
+                <style><class name="system-info-list"/></style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing><property name="expand">True</property><property name="fill">True</property></packing>
+    </child>
+    <child><object class="GtkLabel" id="autostart_status"><property name="label" translatable="yes">Not loaded</property><property name="xalign">0</property><style><class name="muted-label"/><class name="status-bar"/></style></object></child>
+  </object>
+</interface>

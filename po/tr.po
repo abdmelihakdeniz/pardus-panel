@@ -1,0 +1,899 @@
+# Turkish translations for Pardus Panel.
+# Copyright (C) 2026 abdmelihakdeniz
+# This file is distributed under GPL-3.0-or-later.
+# abdmelihakdeniz <melowiann@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pardus-panel 1.0\n"
+"Report-Msgid-Bugs-To: melowiann@gmail.com\n"
+"POT-Creation-Date: 2026-07-24 19:19+0300\n"
+"PO-Revision-Date: 2026-07-24 13:12+0300\n"
+"Last-Translator: abdmelihakdeniz <melowiann@gmail.com>\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/pardus_panel/gtk/pages/autostart.py:55
+#, python-brace-format
+msgid "{count} entries"
+msgstr "{count} uygulama"
+
+#: src/pardus_panel/gtk/pages/autostart.py:62
+#, python-brace-format
+msgid "Enable {name}"
+msgstr "{name} uygulamasını etkinleştir"
+
+#: src/pardus_panel/gtk/pages/autostart.py:79
+#: src/pardus_panel/gtk/pages/services.py:154
+#: src/pardus_panel/data/ui/Logs.ui:72 src/pardus_panel/data/ui/Process.ui:140
+msgid "User"
+msgstr "Kullanıcı"
+
+#: src/pardus_panel/gtk/pages/autostart.py:79
+#: src/pardus_panel/gtk/pages/services.py:154
+#: src/pardus_panel/data/ui/Logs.ui:72
+msgid "System"
+msgstr "Sistem"
+
+#: src/pardus_panel/gtk/pages/autostart.py:87
+msgid "Delete startup application"
+msgstr "Başlangıç uygulamasını sil"
+
+#: src/pardus_panel/gtk/pages/autostart.py:131
+#, python-brace-format
+msgid "Autostart action failed: {error}"
+msgstr "Başlangıç uygulaması işlemi başarısız oldu: {error}"
+
+#: src/pardus_panel/gtk/pages/logs.py:14 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Emergency"
+msgstr "Acil durum"
+
+#: src/pardus_panel/gtk/pages/logs.py:15 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Alert"
+msgstr "Alarm"
+
+#: src/pardus_panel/gtk/pages/logs.py:16 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Critical"
+msgstr "Kritik"
+
+#: src/pardus_panel/gtk/pages/logs.py:17 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Error"
+msgstr "Hata"
+
+#: src/pardus_panel/gtk/pages/logs.py:18 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Warning"
+msgstr "Uyarı"
+
+#: src/pardus_panel/gtk/pages/logs.py:19 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Notice"
+msgstr "Bildirim"
+
+#: src/pardus_panel/gtk/pages/logs.py:20 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Info"
+msgstr "Bilgi"
+
+#: src/pardus_panel/gtk/pages/logs.py:21 src/pardus_panel/data/ui/Logs.ui:74
+msgid "Debug"
+msgstr "Hata ayıklama"
+
+#: src/pardus_panel/gtk/pages/logs.py:57
+msgid "Loading logs…"
+msgstr "Günlükler yükleniyor…"
+
+#: src/pardus_panel/gtk/pages/logs.py:85
+#, python-brace-format
+msgid "Time: {value}"
+msgstr "Tarih ve saat: {value}"
+
+#: src/pardus_panel/gtk/pages/logs.py:86
+#, python-brace-format
+msgid "Level: {value}"
+msgstr "Düzey: {value}"
+
+#: src/pardus_panel/gtk/pages/logs.py:87
+#, python-brace-format
+msgid "Source: {value}"
+msgstr "Kaynak: {value}"
+
+#: src/pardus_panel/gtk/pages/logs.py:112
+#: src/pardus_panel/gtk/pages/logs.py:114
+#: src/pardus_panel/gtk/pages/logs.py:116
+#: src/pardus_panel/gtk/pages/power.py:22
+#: src/pardus_panel/gtk/pages/power.py:74
+#: src/pardus_panel/gtk/pages/power.py:76
+#: src/pardus_panel/gtk/pages/power.py:81
+#: src/pardus_panel/gtk/pages/power.py:88
+#: src/pardus_panel/gtk/pages/power.py:120
+#: src/pardus_panel/gtk/pages/processes.py:151
+#: src/pardus_panel/gtk/pages/processes.py:157
+#: src/pardus_panel/gtk/pages/services.py:157
+#: src/pardus_panel/gtk/pages/services.py:158
+#: src/pardus_panel/gtk/pages/services.py:159
+#: src/pardus_panel/gtk/pages/system_info.py:57
+msgid "Unknown"
+msgstr "Bilinmiyor"
+
+#: src/pardus_panel/gtk/pages/logs.py:119
+#, python-brace-format
+msgid "{count} log entries"
+msgstr "{count} günlük kaydı"
+
+#: src/pardus_panel/gtk/pages/logs.py:121
+msgid "No log entries found"
+msgstr "Günlük kaydı bulunamadı"
+
+#: src/pardus_panel/gtk/pages/logs.py:125
+#, python-brace-format
+msgid "Could not load logs: {error}"
+msgstr "Günlükler yüklenemedi: {error}"
+
+#: src/pardus_panel/gtk/pages/performance.py:192
+#: src/pardus_panel/gtk/pages/performance.py:197
+#: src/pardus_panel/gtk/pages/power.py:67
+#: src/pardus_panel/gtk/pages/power.py:68
+#: src/pardus_panel/gtk/pages/power.py:69
+#: src/pardus_panel/gtk/pages/system_info.py:60
+#: src/pardus_panel/data/ui/Power.ui:60
+msgid "Unavailable"
+msgstr "Kullanılamıyor"
+
+#: src/pardus_panel/gtk/pages/performance.py:213
+msgid "No CPU core data"
+msgstr "CPU çekirdeği bilgisi bulunamadı"
+
+#: src/pardus_panel/gtk/pages/performance.py:220
+#, python-brace-format
+msgid "Core {number}"
+msgstr "Çekirdek {number}"
+
+#: src/pardus_panel/gtk/pages/performance.py:242
+msgid "No physical disks found"
+msgstr "Fiziksel disk bulunamadı"
+
+#: src/pardus_panel/gtk/pages/performance.py:247
+#, python-brace-format
+msgid "Could not refresh: {error}"
+msgstr "Veriler yenilenemedi: {error}"
+
+#: src/pardus_panel/gtk/pages/performance.py:318
+msgid "Calculating…"
+msgstr "Hesaplanıyor…"
+
+#: src/pardus_panel/gtk/pages/power.py:18
+msgid "Charging"
+msgstr "Şarj oluyor"
+
+#: src/pardus_panel/gtk/pages/power.py:19
+msgid "Discharging"
+msgstr "Pil kullanılıyor"
+
+#: src/pardus_panel/gtk/pages/power.py:20
+msgid "Not charging"
+msgstr "Şarj olmuyor"
+
+#: src/pardus_panel/gtk/pages/power.py:21
+msgid "Full"
+msgstr "Tam dolu"
+
+#: src/pardus_panel/gtk/pages/power.py:25 src/pardus_panel/data/ui/Power.ui:61
+msgid "Power saver"
+msgstr "Güç tasarrufu"
+
+#: src/pardus_panel/gtk/pages/power.py:26 src/pardus_panel/data/ui/Power.ui:61
+msgid "Balanced"
+msgstr "Dengeli"
+
+#: src/pardus_panel/gtk/pages/power.py:27
+#: src/pardus_panel/data/ui/MainWindow.ui:64
+#: src/pardus_panel/data/ui/Performance.ui:59
+#: src/pardus_panel/data/ui/Power.ui:61
+msgid "Performance"
+msgstr "Performans"
+
+#: src/pardus_panel/gtk/pages/power.py:56
+msgid "Loading power information…"
+msgstr "Güç bilgisi yükleniyor…"
+
+#: src/pardus_panel/gtk/pages/power.py:66
+msgid "No battery detected"
+msgstr "Pil bulunamadı"
+
+#: src/pardus_panel/gtk/pages/power.py:114
+#, python-brace-format
+msgid "Could not load power information: {error}"
+msgstr "Güç bilgileri yüklenemedi: {error}"
+
+#: src/pardus_panel/gtk/pages/power.py:123
+#, python-brace-format
+msgid "{hours} h {minutes} min"
+msgstr "{hours} sa {minutes} dk"
+
+#: src/pardus_panel/gtk/pages/processes.py:31
+#: src/pardus_panel/gtk/pages/services.py:28
+msgid "Running"
+msgstr "Çalışıyor"
+
+#: src/pardus_panel/gtk/pages/processes.py:32
+msgid "Sleeping"
+msgstr "Uyuyor"
+
+#: src/pardus_panel/gtk/pages/processes.py:33
+msgid "Disk sleep"
+msgstr "Disk beklemesinde"
+
+#: src/pardus_panel/gtk/pages/processes.py:34
+msgid "Stopped"
+msgstr "Durduruldu"
+
+#: src/pardus_panel/gtk/pages/processes.py:35
+msgid "Tracing stop"
+msgstr "İzleme nedeniyle durdu"
+
+#: src/pardus_panel/gtk/pages/processes.py:36
+msgid "Zombie"
+msgstr "Zombi"
+
+#: src/pardus_panel/gtk/pages/processes.py:37
+#: src/pardus_panel/gtk/pages/services.py:30
+msgid "Dead"
+msgstr "Sonlandı"
+
+#: src/pardus_panel/gtk/pages/processes.py:38
+msgid "Wake kill"
+msgstr "Sonlandırılmayı bekliyor"
+
+#: src/pardus_panel/gtk/pages/processes.py:39
+msgid "Waking"
+msgstr "Uyanıyor"
+
+#: src/pardus_panel/gtk/pages/processes.py:40
+msgid "Parked"
+msgstr "Beklemede"
+
+#: src/pardus_panel/gtk/pages/processes.py:41
+msgid "Idle"
+msgstr "Boşta"
+
+#: src/pardus_panel/gtk/pages/processes.py:42
+msgid "Locked"
+msgstr "Kilitli"
+
+#: src/pardus_panel/gtk/pages/processes.py:43
+msgid "Waiting"
+msgstr "Bekliyor"
+
+#: src/pardus_panel/gtk/pages/processes.py:165
+#, python-brace-format
+msgid "{count} processes"
+msgstr "{count} süreç"
+
+#: src/pardus_panel/gtk/pages/processes.py:195
+#, python-brace-format
+msgid "End {name}?"
+msgstr "{name} sonlandırılsın mı?"
+
+#: src/pardus_panel/gtk/pages/processes.py:198
+#, python-brace-format
+msgid "PID {pid} will be asked to stop."
+msgstr "PID {pid} numaralı sürece sonlanma isteği gönderilecek."
+
+#: src/pardus_panel/gtk/pages/processes.py:217
+msgid "Process ended"
+msgstr "Süreç sonlandırıldı"
+
+#: src/pardus_panel/gtk/pages/processes.py:218
+msgid "Process killed after timeout"
+msgstr "Süreç, zaman aşımından sonra zorla sonlandırıldı"
+
+#: src/pardus_panel/gtk/pages/processes.py:219
+msgid "Process already gone"
+msgstr "Süreç zaten sonlanmış"
+
+#: src/pardus_panel/gtk/pages/processes.py:220
+msgid "Permission denied"
+msgstr "Bu işlem için yetkiniz yok"
+
+#: src/pardus_panel/gtk/pages/processes.py:221
+msgid "Process did not stop"
+msgstr "Süreç durmadı"
+
+#: src/pardus_panel/gtk/pages/processes.py:222
+msgid "PID now belongs to another process"
+msgstr "Bu PID artık başka bir sürece ait"
+
+#: src/pardus_panel/gtk/pages/processes.py:233
+#, python-brace-format
+msgid "Could not end process: {error}"
+msgstr "Süreç sonlandırılamadı: {error}"
+
+#: src/pardus_panel/gtk/pages/processes.py:237
+#, python-brace-format
+msgid "Could not load processes: {error}"
+msgstr "Süreçler yüklenemedi: {error}"
+
+#: src/pardus_panel/gtk/pages/services.py:20
+msgid "Active"
+msgstr "Çalışıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:21
+#: src/pardus_panel/gtk/pages/services.py:35
+#: src/pardus_panel/gtk/pages/services.py:36
+#: src/pardus_panel/gtk/pages/services.py:37
+msgid "Reloading"
+msgstr "Yeniden yükleniyor"
+
+#: src/pardus_panel/gtk/pages/services.py:22
+msgid "Inactive"
+msgstr "Çalışmıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:23
+msgid "Failed"
+msgstr "Hata"
+
+#: src/pardus_panel/gtk/pages/services.py:24
+msgid "Activating"
+msgstr "Başlatılıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:25
+msgid "Deactivating"
+msgstr "Durduruluyor"
+
+#: src/pardus_panel/gtk/pages/services.py:26
+msgid "Maintenance"
+msgstr "Bakımda"
+
+#: src/pardus_panel/gtk/pages/services.py:27
+msgid "Refreshing"
+msgstr "Yenileniyor"
+
+#: src/pardus_panel/gtk/pages/services.py:29
+msgid "Exited"
+msgstr "Sonlandı"
+
+#: src/pardus_panel/gtk/pages/services.py:31
+msgid "Waiting for condition"
+msgstr "Koşul bekleniyor"
+
+#: src/pardus_panel/gtk/pages/services.py:32
+msgid "Preparing to start"
+msgstr "Başlatmaya hazırlanıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:33
+msgid "Starting"
+msgstr "Başlatılıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:34
+msgid "Finishing startup"
+msgstr "Başlatma tamamlanıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:38
+msgid "Restarting automatically"
+msgstr "Otomatik yeniden başlatılıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:39
+#: src/pardus_panel/gtk/pages/services.py:40
+#: src/pardus_panel/gtk/pages/services.py:41
+#: src/pardus_panel/gtk/pages/services.py:42
+msgid "Stopping"
+msgstr "Durduruluyor"
+
+#: src/pardus_panel/gtk/pages/services.py:43
+#: src/pardus_panel/gtk/pages/services.py:44
+#: src/pardus_panel/gtk/pages/services.py:45
+#: src/pardus_panel/gtk/pages/services.py:46
+msgid "Finishing shutdown"
+msgstr "Durdurma tamamlanıyor"
+
+#: src/pardus_panel/gtk/pages/services.py:47
+msgid "Cleaning"
+msgstr "Temizleniyor"
+
+#: src/pardus_panel/gtk/pages/services.py:48
+msgid "Enabled"
+msgstr "Etkin"
+
+#: src/pardus_panel/gtk/pages/services.py:49
+msgid "Enabled for this session"
+msgstr "Yalnızca bu oturumda etkin"
+
+#: src/pardus_panel/gtk/pages/services.py:50
+msgid "Linked"
+msgstr "Bağlı"
+
+#: src/pardus_panel/gtk/pages/services.py:51
+msgid "Linked for this session"
+msgstr "Yalnızca bu oturumda bağlı"
+
+#: src/pardus_panel/gtk/pages/services.py:52
+msgid "Alias"
+msgstr "Takma ad"
+
+#: src/pardus_panel/gtk/pages/services.py:53
+msgid "Masked"
+msgstr "Maskelenmiş"
+
+#: src/pardus_panel/gtk/pages/services.py:54
+msgid "Masked for this session"
+msgstr "Yalnızca bu oturumda maskelenmiş"
+
+#: src/pardus_panel/gtk/pages/services.py:55
+msgid "Static"
+msgstr "Statik"
+
+#: src/pardus_panel/gtk/pages/services.py:56
+msgid "Indirect"
+msgstr "Dolaylı"
+
+#: src/pardus_panel/gtk/pages/services.py:57
+msgid "Disabled"
+msgstr "Devre dışı"
+
+#: src/pardus_panel/gtk/pages/services.py:58
+msgid "Generated"
+msgstr "Otomatik oluşturuldu"
+
+#: src/pardus_panel/gtk/pages/services.py:59
+msgid "Transient"
+msgstr "Geçici"
+
+#: src/pardus_panel/gtk/pages/services.py:60
+msgid "Invalid"
+msgstr "Geçersiz"
+
+#: src/pardus_panel/gtk/pages/services.py:63
+#: src/pardus_panel/data/ui/Services.ui:108
+msgid "Start"
+msgstr "Başlat"
+
+#: src/pardus_panel/gtk/pages/services.py:64
+#: src/pardus_panel/data/ui/Services.ui:109
+msgid "Stop"
+msgstr "Durdur"
+
+#: src/pardus_panel/gtk/pages/services.py:65
+#: src/pardus_panel/data/ui/Services.ui:110
+msgid "Restart"
+msgstr "Yeniden başlat"
+
+#: src/pardus_panel/gtk/pages/services.py:66
+#: src/pardus_panel/data/ui/Services.ui:122
+msgid "Enable"
+msgstr "Etkinleştir"
+
+#: src/pardus_panel/gtk/pages/services.py:67
+#: src/pardus_panel/data/ui/Services.ui:123
+msgid "Disable"
+msgstr "Devre dışı bırak"
+
+#: src/pardus_panel/gtk/pages/services.py:108
+msgid "Loading services…"
+msgstr "Servisler yükleniyor…"
+
+#: src/pardus_panel/gtk/pages/services.py:164
+#, python-brace-format
+msgid "{count} services"
+msgstr "{count} servis"
+
+#: src/pardus_panel/gtk/pages/services.py:166
+msgid "No services found"
+msgstr "Servis bulunamadı"
+
+#: src/pardus_panel/gtk/pages/services.py:201
+#, python-brace-format
+msgid "{action} completed for {unit}."
+msgstr "{unit} için {action} işlemi tamamlandı."
+
+#: src/pardus_panel/gtk/pages/services.py:211
+#, python-brace-format
+msgid "{action} completed"
+msgstr "{action} işlemi tamamlandı"
+
+#: src/pardus_panel/gtk/pages/services.py:219
+#, python-brace-format
+msgid "{action} failed for {unit}."
+msgstr "{unit} için {action} işlemi başarısız oldu."
+
+#: src/pardus_panel/gtk/pages/services.py:228
+#, python-brace-format
+msgid "{action} failed"
+msgstr "{action} işlemi başarısız oldu"
+
+#: src/pardus_panel/gtk/pages/services.py:230
+#, python-brace-format
+msgid ""
+"The operation could not be completed for {unit}.\n"
+"\n"
+"Reason: {error}"
+msgstr ""
+"İşlem {unit} için tamamlanamadı.\n"
+"\n"
+"Neden: {error}"
+
+#: src/pardus_panel/gtk/pages/services.py:235
+msgid "Could not load services"
+msgstr "Servisler yüklenemedi"
+
+#: src/pardus_panel/gtk/pages/services.py:241
+#, python-brace-format
+msgid ""
+"The service list could not be loaded.\n"
+"\n"
+"Reason: {error}"
+msgstr ""
+"Servis listesi yüklenemedi.\n"
+"\n"
+"Neden: {error}"
+
+#: src/pardus_panel/gtk/pages/system_info.py:46
+msgid "Loading system information…"
+msgstr "Sistem bilgileri yükleniyor…"
+
+#: src/pardus_panel/gtk/pages/system_info.py:77
+#, python-brace-format
+msgid "Could not load system information: {error}"
+msgstr "Sistem bilgileri yüklenemedi: {error}"
+
+#: src/pardus_panel/data/ui/Autostart.ui:6
+msgid "Add Startup Application"
+msgstr "Başlangıç uygulaması ekle"
+
+#: src/pardus_panel/data/ui/Autostart.ui:19
+msgid "Name"
+msgstr "Ad"
+
+#: src/pardus_panel/data/ui/Autostart.ui:20
+msgid "Display name"
+msgstr "Görünen ad"
+
+#: src/pardus_panel/data/ui/Autostart.ui:21
+msgid "Command"
+msgstr "Komut"
+
+#: src/pardus_panel/data/ui/Autostart.ui:22
+msgid "Command to execute"
+msgstr "Çalıştırılacak komut"
+
+#: src/pardus_panel/data/ui/Autostart.ui:28
+#: src/pardus_panel/data/ui/Process.ui:31
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/pardus_panel/data/ui/Autostart.ui:29
+msgid "Add"
+msgstr "Ekle"
+
+#: src/pardus_panel/data/ui/Autostart.ui:62
+msgid "Autostart Management"
+msgstr "Otomatik başlatma"
+
+#: src/pardus_panel/data/ui/Autostart.ui:69
+msgid ""
+"Manage applications that start automatically when you log in. User entries "
+"can be deleted; system entries cannot be modified directly."
+msgstr ""
+"Oturum açtığınızda çalışacak uygulamaları yönetin. Kullanıcı tarafından "
+"eklenen uygulamalar silinebilir; sistem girdileri doğrudan değiştirilemez."
+
+#: src/pardus_panel/data/ui/Autostart.ui:86
+msgid "Startup Applications"
+msgstr "Başlangıç uygulamaları"
+
+#: src/pardus_panel/data/ui/Autostart.ui:96
+msgid "Add startup application"
+msgstr "Başlangıç uygulaması ekle"
+
+#: src/pardus_panel/data/ui/Autostart.ui:127
+#: src/pardus_panel/data/ui/Logs.ui:95 src/pardus_panel/data/ui/Process.ui:151
+#: src/pardus_panel/data/ui/Services.ui:126
+msgid "Not loaded"
+msgstr "Henüz yüklenmedi"
+
+#: src/pardus_panel/data/ui/Logs.ui:6
+msgid "Log Details"
+msgstr "Günlük ayrıntıları"
+
+#: src/pardus_panel/data/ui/Logs.ui:41 src/pardus_panel/data/ui/Services.ui:30
+msgid "Close"
+msgstr "Kapat"
+
+#: src/pardus_panel/data/ui/Logs.ui:60
+msgid "System Logs"
+msgstr "Sistem günlükleri"
+
+#: src/pardus_panel/data/ui/Logs.ui:61
+msgid ""
+"Show up to 300 recent journal entries. Access depends on the current user's "
+"journal permissions."
+msgstr ""
+"Son 300 sistem günlüğü kaydını gösterir. Görüntülenebilen kayıtlar, geçerli "
+"kullanıcının günlük izinlerine bağlıdır."
+
+#: src/pardus_panel/data/ui/Logs.ui:71 src/pardus_panel/data/ui/Services.ui:86
+msgid "Scope"
+msgstr "Kapsam"
+
+#: src/pardus_panel/data/ui/Logs.ui:73 src/pardus_panel/data/ui/Logs.ui:87
+msgid "Level"
+msgstr "Düzey"
+
+#: src/pardus_panel/data/ui/Logs.ui:74
+msgid "All"
+msgstr "Tümü"
+
+#: src/pardus_panel/data/ui/Logs.ui:75
+msgid "Search source or message; press Enter"
+msgstr "Kaynakta ya da iletide ara; Enter'a bas"
+
+#: src/pardus_panel/data/ui/Logs.ui:76
+msgid "Refresh logs"
+msgstr "Günlükleri yenile"
+
+#: src/pardus_panel/data/ui/Logs.ui:86
+msgid "Time"
+msgstr "Tarih ve saat"
+
+#: src/pardus_panel/data/ui/Logs.ui:88
+msgid "Source"
+msgstr "Kaynak"
+
+#: src/pardus_panel/data/ui/Logs.ui:89
+msgid "Message"
+msgstr "İleti"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:5
+#: src/pardus_panel/data/ui/MainWindow.ui:11
+#: src/pardus_panel/data/ui/MainWindow.ui:37
+msgid "Pardus Panel"
+msgstr "Pardus Panel"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:38
+msgid "System Panel"
+msgstr "Sistem Paneli"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:58
+msgid "Processes"
+msgstr "Süreçler"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:70
+msgid "Autostart"
+msgstr "Otomatik başlatma"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:76
+msgid "Services"
+msgstr "Servisler"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:82
+msgid "Logs"
+msgstr "Günlükler"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:88
+msgid "Power"
+msgstr "Güç"
+
+#: src/pardus_panel/data/ui/MainWindow.ui:94
+#: src/pardus_panel/data/ui/SystemInfo.ui:34
+msgid "System Information"
+msgstr "Sistem bilgisi"
+
+#: src/pardus_panel/data/ui/Performance.ui:31
+msgid "Performance Monitor"
+msgstr "Performans izleyicisi"
+
+#: src/pardus_panel/data/ui/Performance.ui:38
+msgid "Monitor CPU, memory, disk, and network activity in real time."
+msgstr "CPU, bellek, disk ve ağ etkinliğini gerçek zamanlı izleyin."
+
+#: src/pardus_panel/data/ui/Performance.ui:73
+#: src/pardus_panel/data/ui/Performance.ui:107
+msgid "CPU"
+msgstr "CPU"
+
+#: src/pardus_panel/data/ui/Performance.ui:74
+#: src/pardus_panel/data/ui/Process.ui:141
+#: src/pardus_panel/data/ui/SystemInfo.ui:113
+msgid "Memory"
+msgstr "Bellek"
+
+#: src/pardus_panel/data/ui/Performance.ui:75
+#: src/pardus_panel/data/ui/Performance.ui:200
+msgid "Disk"
+msgstr "Disk"
+
+#: src/pardus_panel/data/ui/Performance.ui:76
+#: src/pardus_panel/data/ui/Performance.ui:231
+msgid "Network"
+msgstr "Ağ"
+
+#: src/pardus_panel/data/ui/Performance.ui:125
+msgid "Average CPU usage"
+msgstr "Ortalama CPU kullanımı"
+
+#: src/pardus_panel/data/ui/Performance.ui:129
+msgid "Temperature"
+msgstr "Sıcaklık"
+
+#: src/pardus_panel/data/ui/Performance.ui:131
+msgid "Frequency"
+msgstr "Frekans"
+
+#: src/pardus_panel/data/ui/Performance.ui:163
+msgid "RAM"
+msgstr "RAM"
+
+#: src/pardus_panel/data/ui/Performance.ui:180
+msgid "Memory usage"
+msgstr "Bellek kullanımı"
+
+#: src/pardus_panel/data/ui/Performance.ui:250
+msgid "Total sent"
+msgstr "Toplam gönderilen veri"
+
+#: src/pardus_panel/data/ui/Performance.ui:252
+msgid "Total received"
+msgstr "Toplam alınan veri"
+
+#: src/pardus_panel/data/ui/Performance.ui:254
+msgid "Packets (in / out)"
+msgstr "Paketler (gelen / giden)"
+
+#: src/pardus_panel/data/ui/Performance.ui:256
+msgid "Errors (in / out)"
+msgstr "Hatalar (gelen / giden)"
+
+#: src/pardus_panel/data/ui/Performance.ui:258
+msgid "Drops (in / out)"
+msgstr "Kaybolan paketler (gelen / giden)"
+
+#: src/pardus_panel/data/ui/Performance.ui:272
+msgid "Upload"
+msgstr "Giden"
+
+#: src/pardus_panel/data/ui/Performance.ui:280
+msgid "Download"
+msgstr "Gelen"
+
+#: src/pardus_panel/data/ui/Power.ui:14
+msgid "Power and Battery"
+msgstr "Güç ve pil"
+
+#: src/pardus_panel/data/ui/Power.ui:15
+msgid ""
+"Battery health is calculated from the current full capacity and its design "
+"capacity."
+msgstr ""
+"Pil sağlığı, tam dolu kapasitenin tasarım kapasitesine oranıyla hesaplanır."
+
+#: src/pardus_panel/data/ui/Power.ui:30
+msgid "Charge"
+msgstr "Şarj düzeyi"
+
+#: src/pardus_panel/data/ui/Power.ui:39
+msgid "Battery health"
+msgstr "Pil sağlığı"
+
+#: src/pardus_panel/data/ui/Power.ui:41
+msgid "Status"
+msgstr "Durum"
+
+#: src/pardus_panel/data/ui/Power.ui:43
+msgid "Estimated time"
+msgstr "Tahmini kalan süre"
+
+#: src/pardus_panel/data/ui/Power.ui:54
+msgid "Power profile"
+msgstr "Güç profili"
+
+#: src/pardus_panel/data/ui/Process.ui:32
+msgid "End Process"
+msgstr "Süreci sonlandır"
+
+#: src/pardus_panel/data/ui/Process.ui:65
+msgid "Process Monitor"
+msgstr "Süreç izleyicisi"
+
+#: src/pardus_panel/data/ui/Process.ui:72
+msgid ""
+"View running applications and end processes that are no longer responding."
+msgstr ""
+"Çalışan uygulamaları görüntüleyin; yanıt vermeyen süreçleri sonlandırın."
+
+#: src/pardus_panel/data/ui/Process.ui:94
+msgid "Search processes"
+msgstr "Süreç ara"
+
+#: src/pardus_panel/data/ui/Process.ui:102
+msgid "Refresh processes"
+msgstr "Süreçleri yenile"
+
+#: src/pardus_panel/data/ui/Process.ui:110
+msgid "Terminate"
+msgstr "Sonlandır"
+
+#: src/pardus_panel/data/ui/Process.ui:138
+msgid "PID"
+msgstr "PID"
+
+#: src/pardus_panel/data/ui/Process.ui:139
+msgid "Application"
+msgstr "Uygulama"
+
+#: src/pardus_panel/data/ui/Process.ui:142
+msgid "CPU %"
+msgstr "CPU %"
+
+#: src/pardus_panel/data/ui/Process.ui:143
+#: src/pardus_panel/data/ui/Services.ui:89
+msgid "State"
+msgstr "Durum"
+
+#: src/pardus_panel/data/ui/Services.ui:58
+msgid "Systemd Services"
+msgstr "systemd servisleri"
+
+#: src/pardus_panel/data/ui/Services.ui:59
+msgid ""
+"Inspect system and user services. System actions may request authorization "
+"through PolicyKit."
+msgstr ""
+"Sistem ve kullanıcı servislerini görüntüleyip yönetin. Sistem işlemlerinde "
+"PolicyKit yetkilendirmesi istenebilir."
+
+#: src/pardus_panel/data/ui/Services.ui:71
+msgid "Search services"
+msgstr "Servis ara"
+
+#: src/pardus_panel/data/ui/Services.ui:72
+msgid "Refresh services"
+msgstr "Servisleri yenile"
+
+#: src/pardus_panel/data/ui/Services.ui:87
+msgid "Service"
+msgstr "Servis"
+
+#: src/pardus_panel/data/ui/Services.ui:88
+msgid "Description"
+msgstr "Açıklama"
+
+#: src/pardus_panel/data/ui/Services.ui:90
+msgid "Detail"
+msgstr "Alt durum"
+
+#: src/pardus_panel/data/ui/Services.ui:91
+msgid "Startup"
+msgstr "Başlangıç durumu"
+
+#: src/pardus_panel/data/ui/Services.ui:105
+msgid "Service actions"
+msgstr "Servis işlemleri"
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:35
+msgid "View operating system and hardware details."
+msgstr "İşletim sistemi ve donanım ayrıntılarını görüntüleyin."
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:54
+msgid "Operating system"
+msgstr "İşletim sistemi"
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:67
+msgid "Hostname"
+msgstr "Bilgisayar adı"
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:92
+msgid "Kernel"
+msgstr "Çekirdek"
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:99
+msgid "Processor"
+msgstr "İşlemci"
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:106
+msgid "Graphics"
+msgstr "Ekran kartı"
+
+#: src/pardus_panel/data/ui/SystemInfo.ui:120
+msgid "System disk"
+msgstr "Sistem diski"

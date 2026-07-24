@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Pardus Panel
+GenericName=Sistem Gözlemcisi
+GenericName[en]=System Monitor
+Comment=Süreçleri, performansı, servisleri, gücü, günlükleri ve başlangıç uygulamalarını yönetin.
+Comment[en]=Manage processes, performance, services, power, logs, and startup applications.
+Exec=pardus-panel
+Icon=tr.org.pardus.panel
+Terminal=false
+Type=Application
+Categories=System;Monitor;X-Pardus-Apps;
+StartupWMClass=tr.org.pardus.panel
+StartupNotify=true
+Keywords=system;process;performance;taskmanager;autostart;sistem;surec;performans;gorevyoneticisi;baslangic;pardus;

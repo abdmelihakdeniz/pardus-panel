@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pardus-panel"
+version = "1.0"
+description = "GTK system management panel for Pardus and Debian"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "abdmelihakdeniz", email = "melowiann@gmail.com" }]
+keywords = ["pardus", "debian", "gtk", "system"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: GTK",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "distro>=1.8",
+    "pycairo",
+    "PyGObject",
+    "psutil>=5.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/abdmelihakdeniz/pardus-panel"
+Repository = "https://github.com/abdmelihakdeniz/pardus-panel"
+
+[project.scripts]
+pardus-panel = "pardus_panel.__main__:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pardus_panel = [
+    "data/ui/*.ui",
+    "data/css/*.css",
+    "data/icons/*.svg",
+    "locales/*/LC_MESSAGES/*.mo",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/pardus_panel/application/app.py" = ["E402"]
+"src/pardus_panel/gtk/**/*.py" = ["E402"]

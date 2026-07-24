@@ -1,0 +1,128 @@
+.app-headerbar {
+    border-bottom: 1px solid alpha(@theme_fg_color, 0.10);
+    background-image: none;
+}
+
+.app-shell {
+    background-color: @theme_bg_color;
+}
+
+.page-content {
+    background-color: @theme_bg_color;
+}
+
+.page-header {
+    margin-bottom: 2px;
+}
+
+.page-title {
+    font-size: 1.35em;
+    font-weight: 700;
+}
+
+.page-description,
+.muted-label {
+    opacity: 0.70;
+}
+
+.section-title {
+    font-size: 1.02em;
+    font-weight: 600;
+}
+
+.content-card,
+.toolbar-card {
+    background-color: @theme_base_color;
+    border: 1px solid alpha(@theme_fg_color, 0.12);
+    border-radius: 10px;
+    background-image: none;
+}
+
+.content-card > border,
+.toolbar-card > border {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.toolbar-card {
+    padding: 10px;
+}
+
+.standard-page .performance-page-frame {
+    border-color: alpha(@theme_fg_color, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px alpha(@theme_fg_color, 0.08);
+}
+
+.page-content entry,
+.page-content button,
+.page-content combobox button {
+    border-radius: 7px;
+}
+
+.page-content entry {
+    min-height: 20px;
+}
+
+.app-dialog {
+    background-color: shade(@theme_bg_color, 1.015);
+}
+
+.app-dialog entry,
+.app-dialog button {
+    border-radius: 7px;
+}
+
+.app-dialog .dialog-action-area {
+    border-top: 1px solid alpha(@theme_fg_color, 0.10);
+    padding: 8px;
+}
+
+.hero-value {
+    font-size: 2.15em;
+    font-weight: 700;
+}
+
+.stat-label {
+    opacity: 0.66;
+    font-size: 0.92em;
+}
+
+.stat-value {
+    font-size: 1.04em;
+    font-weight: 500;
+}
+
+.power-hero-icon {
+    padding: 12px;
+}
+
+.system-info-list {
+    background-color: @theme_base_color;
+    border: 1px solid alpha(@theme_fg_color, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px alpha(@theme_fg_color, 0.08);
+}
+
+.system-info-list row {
+    background-color: transparent;
+    border-bottom: 1px solid alpha(@theme_fg_color, 0.10);
+}
+
+.system-info-list row:last-child {
+    border-bottom: none;
+}
+
+.system-info-row {
+    padding: 10px 16px;
+}
+
+.system-info-list .dim-label {
+    font-size: 0.9em;
+    opacity: 0.62;
+}
+
+.system-info-value {
+    font-size: 1em;
+}

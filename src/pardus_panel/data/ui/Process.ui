@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="pardus-panel">
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="refresh_image"><property name="icon-name">view-refresh-symbolic</property></object>
+  <object class="GtkImage" id="kill_image"><property name="icon-name">process-stop-symbolic</property></object>
+  <object class="GtkDialog" id="process_termination_dialog">
+    <property name="modal">True</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="resizable">False</property>
+    <style><class name="app-dialog"/></style>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox">
+            <property name="spacing">16</property>
+            <property name="margin">18</property>
+            <child><object class="GtkImage"><property name="icon-name">dialog-warning-symbolic</property><property name="pixel-size">48</property><property name="valign">start</property></object></child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property><property name="spacing">6</property>
+                <child><object class="GtkLabel" id="process_termination_title"><property name="xalign">0</property><property name="wrap">True</property><style><class name="page-title"/></style></object></child>
+                <child><object class="GtkLabel" id="process_termination_detail"><property name="xalign">0</property><property name="wrap">True</property><style><class name="muted-label"/></style></object></child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="spacing">6</property><property name="layout-style">end</property>
+            <child><object class="GtkButton" id="process_cancel_button"><property name="label" translatable="yes">Cancel</property><property name="can-default">True</property><property name="has-default">True</property></object></child>
+            <child><object class="GtkButton" id="process_confirm_button"><property name="label" translatable="yes">End Process</property><style><class name="destructive-action"/></style></object></child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-6">process_cancel_button</action-widget>
+      <action-widget response="-5">process_confirm_button</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkBox" id="process_content">
+    <property name="orientation">vertical</property>
+    <property name="spacing">14</property>
+    <property name="margin">16</property>
+    <style><class name="page-content"/><class name="standard-page"/></style>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">12</property>
+        <style><class name="page-header"/></style>
+        <child>
+          <object class="GtkImage">
+            <property name="icon-name">view-list-symbolic</property>
+            <property name="pixel-size">20</property>
+            <property name="valign">start</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">4</property>
+            <child>
+              <object class="GtkLabel" id="process_title">
+                <property name="label" translatable="yes">Process Monitor</property>
+                <property name="xalign">0</property>
+                <style><class name="page-title"/></style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">View running applications and end processes that are no longer responding.</property>
+                <property name="xalign">0</property>
+                <property name="wrap">True</property>
+                <style><class name="page-description"/></style>
+              </object>
+            </child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="shadow-type">none</property>
+        <style><class name="toolbar-card"/></style>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">8</property>
+            <child>
+              <object class="GtkSearchEntry" id="process_search_entry">
+                <property name="hexpand">True</property>
+                <property name="placeholder-text" translatable="yes">Search processes</property>
+              </object>
+              <packing><property name="expand">True</property><property name="fill">True</property></packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="process_refresh_button">
+                <property name="image">refresh_image</property>
+                <property name="always-show-image">True</property>
+                <property name="tooltip-text" translatable="yes">Refresh processes</property>
+                <style><class name="image-button"/></style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="process_kill_button">
+                <property name="image">kill_image</property>
+                <property name="always-show-image">True</property>
+                <property name="tooltip-text" translatable="yes">Terminate</property>
+                <style><class name="image-button"/><class name="destructive-action"/></style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="shadow-type">none</property>
+        <style><class name="table-card"/></style>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="vexpand">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="vscrollbar-policy">automatic</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkTreeView" id="process_view">
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="enable-search">False</property>
+                <property name="enable-tree-lines">False</property>
+                <property name="enable-grid-lines">none</property>
+                <property name="headers-clickable">True</property>
+                <property name="headers-visible">True</property>
+                <style><class name="data-table"/></style>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">PID</property><property name="sizing">fixed</property><property name="fixed-width">70</property><property name="sort-column-id">0</property><child><object class="GtkCellRendererText"><property name="family">monospace</property><property name="xalign">1</property></object><attributes><attribute name="text">0</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Application</property><property name="sizing">fixed</property><property name="fixed-width">180</property><property name="expand">True</property><property name="sort-column-id">1</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">1</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn" id="process_user_column"><property name="title" translatable="yes">User</property><property name="sizing">fixed</property><property name="fixed-width">140</property><property name="expand">True</property><property name="sort-column-id">2</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">2</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">Memory</property><property name="sizing">fixed</property><property name="fixed-width">110</property><property name="sort-column-id">5</property><child><object class="GtkCellRendererText"/><attributes><attribute name="text">3</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn"><property name="title" translatable="yes">CPU %</property><property name="sizing">fixed</property><property name="fixed-width">90</property><property name="sort-column-id">6</property><child><object class="GtkCellRendererText"/><attributes><attribute name="text">4</attribute></attributes></child></object></child>
+                <child><object class="GtkTreeViewColumn" id="process_status_column"><property name="title" translatable="yes">State</property><property name="sizing">fixed</property><property name="fixed-width">100</property><property name="sort-column-id">8</property><child><object class="GtkCellRendererText"><property name="ellipsize">end</property></object><attributes><attribute name="text">8</attribute></attributes></child></object></child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing><property name="expand">True</property><property name="fill">True</property></packing>
+    </child>
+    <child><object class="GtkLabel" id="process_status"><property name="label" translatable="yes">Not loaded</property><property name="xalign">0</property><style><class name="muted-label"/><class name="status-bar"/></style></object></child>
+  </object>
+</interface>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>tr.org.pardus.panel</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Pardus Panel</name>
+  <developer id="github.com/abdmelihakdeniz">
+    <name>abdmelihakdeniz</name>
+  </developer>
+  <summary>Modern system monitor for Pardus</summary>
+  <summary xml:lang="tr">Pardus için modern sistem izleyicisi</summary>
+  <description>
+    <p>
+      Pardus Panel is a GTK3 system monitor and task manager for Pardus, with live
+      performance graphs and integrated Linux administration tools.
+    </p>
+    <p xml:lang="tr">Pardus Panel, Pardus için GTK3 tabanlı modern bir sistem izleme ve görev yöneticisidir.</p>
+    <ul>
+      <li>Process listing, sorting, and termination</li>
+      <li xml:lang="tr">Süreçleri listeleme, sıralama ve sonlandırma</li>
+      <li>Live CPU, memory, disk, and network graphs</li>
+      <li xml:lang="tr">Canlı CPU, bellek, disk ve ağ grafikleri</li>
+      <li>XDG autostart application management</li>
+      <li xml:lang="tr">XDG otomatik başlangıç uygulaması yönetimi</li>
+      <li>System and hardware information</li>
+      <li xml:lang="tr">Sistem ve donanım bilgileri</li>
+      <li>Systemd service management</li>
+      <li xml:lang="tr">Systemd hizmet yönetimi</li>
+      <li>Power-profile and battery information</li>
+      <li xml:lang="tr">Güç profili ve batarya bilgileri</li>
+      <li>System journal viewing</li>
+      <li xml:lang="tr">Sistem günlüğünü görüntüleme</li>
+    </ul>
+  </description>
+  <url type="homepage">https://github.com/abdmelihakdeniz/pardus-panel</url>
+  <url type="bugtracker">https://github.com/abdmelihakdeniz/pardus-panel/issues</url>
+  <url type="vcs-browser">https://github.com/abdmelihakdeniz/pardus-panel</url>
+  <launchable type="desktop-id">tr.org.pardus.panel.desktop</launchable>
+  <provides>
+    <binary>pardus-panel</binary>
+  </provides>
+  <categories>
+    <category>System</category>
+    <category>Monitor</category>
+  </categories>
+  <keywords>
+    <keyword>system</keyword>
+    <keyword>monitor</keyword>
+    <keyword>process</keyword>
+    <keyword>performance</keyword>
+    <keyword>task manager</keyword>
+    <keyword xml:lang="tr">sistem</keyword>
+    <keyword xml:lang="tr">süreç</keyword>
+    <keyword xml:lang="tr">performans</keyword>
+    <keyword xml:lang="tr">görev yöneticisi</keyword>
+  </keywords>
+  <releases>
+    <release version="1.0" date="2026-07-24"/>
+    <release version="0.7" date="2026-07-19"/>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>

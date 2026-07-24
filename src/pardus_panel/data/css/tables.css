@@ -1,0 +1,54 @@
+.data-table {
+    background: @theme_base_color;
+}
+.data-table treeview,
+.data-table.view {
+    border-radius: 0;
+    outline-style: none;
+}
+.data-table.view:focus {
+    outline-style: none;
+}
+.data-table.view header button {
+    padding: 8px 10px;
+    background-color: shade(@theme_base_color, 0.97);
+    background-image: none;
+    border-bottom-color: alpha(@theme_fg_color, 0.12);
+}
+.data-table.view:hover {
+    background-image: none;
+}
+.data-table.view:selected,
+.data-table.view:selected:focus,
+.data-table.view:selected:hover {
+    background-image: none;
+    background-color: @theme_selected_bg_color;
+    border-radius: 0;
+    color: @theme_selected_fg_color;
+}
+.data-table.view cell:selected,
+.data-table.view cell:selected:focus {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+.data-table.view text:selected,
+.data-table.view text:selected:focus {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+.data-table.view rubberband,
+.data-table.view rubberband:focus {
+    border-color: @theme_selected_bg_color;
+    background-color: alpha(@theme_selected_bg_color, 0.20);
+}
+
+.table-card {
+    background-color: @theme_base_color;
+    border: 1px solid alpha(@theme_fg_color, 0.12);
+    border-radius: 10px;
+}
+
+.table-card > border {
+    border: none;
+    box-shadow: none;
+}

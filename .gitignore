@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Build & Release outputs
+/build/
+/dist/
+/.pybuild/
+*.mo
+*.deb
+
+# Debian package outputs
+/debian/debhelper-build-stamp
+/debian/files
+/debian/*.debhelper*
+/debian/*.log
+/debian/*.substvars
+/debian/.debhelper/
+/debian/tmp/
+/debian/*/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment & Misc
+.env
+.DS_Store

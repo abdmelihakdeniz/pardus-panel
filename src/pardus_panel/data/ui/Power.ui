@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="pardus-panel">
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkBox" id="power_content">
+    <property name="orientation">vertical</property>
+    <property name="spacing">14</property>
+    <property name="margin">16</property>
+    <style><class name="page-content"/><class name="standard-page"/></style>
+    <child>
+      <object class="GtkBox"><property name="orientation">horizontal</property><property name="spacing">12</property><style><class name="page-header"/></style>
+        <child><object class="GtkImage"><property name="icon-name">battery-symbolic</property><property name="pixel-size">20</property><property name="valign">start</property></object></child>
+        <child>
+          <object class="GtkBox"><property name="orientation">vertical</property><property name="spacing">4</property>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Power and Battery</property><property name="xalign">0</property><style><class name="page-title"/></style></object></child>
+            <child><object class="GtkLabel"><property name="label" translatable="yes">Battery health is calculated from the current full capacity and its design capacity.</property><property name="xalign">0</property><property name="wrap">True</property><style><class name="page-description"/></style></object></child>
+          </object>
+          <packing><property name="expand">True</property><property name="fill">True</property></packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFrame"><property name="shadow-type">none</property><style><class name="content-card"/></style>
+        <child>
+          <object class="GtkBox"><property name="orientation">vertical</property><property name="spacing">18</property><property name="margin">20</property>
+            <child>
+              <object class="GtkBox"><property name="orientation">horizontal</property><property name="spacing">16</property>
+                <child><object class="GtkImage"><property name="icon-name">battery-good-symbolic</property><property name="pixel-size">48</property><property name="valign">center</property><style><class name="power-hero-icon"/></style></object></child>
+                <child>
+                  <object class="GtkBox"><property name="orientation">vertical</property><property name="spacing">2</property><property name="valign">center</property>
+                    <child><object class="GtkLabel"><property name="label" translatable="yes">Charge</property><property name="xalign">0</property><style><class name="stat-label"/></style></object></child>
+                    <child><object class="GtkLabel" id="power_battery"><property name="label">—</property><property name="xalign">0</property><style><class name="hero-value"/></style></object></child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child><object class="GtkSeparator"/></child>
+            <child>
+              <object class="GtkGrid"><property name="column-spacing">32</property><property name="row-spacing">6</property><property name="column-homogeneous">True</property>
+                <child><object class="GtkLabel"><property name="label" translatable="yes">Battery health</property><property name="xalign">0</property><style><class name="stat-label"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">0</property></packing></child>
+                <child><object class="GtkLabel" id="power_health"><property name="label">—</property><property name="xalign">0</property><style><class name="stat-value"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">1</property></packing></child>
+                <child><object class="GtkLabel"><property name="label" translatable="yes">Status</property><property name="xalign">0</property><property name="margin-top">14</property><style><class name="stat-label"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">2</property></packing></child>
+                <child><object class="GtkLabel" id="power_status"><property name="label">—</property><property name="xalign">0</property><style><class name="stat-value"/></style></object><packing><property name="left-attach">0</property><property name="top-attach">3</property></packing></child>
+                <child><object class="GtkLabel"><property name="label" translatable="yes">Estimated time</property><property name="xalign">0</property><style><class name="stat-label"/></style></object><packing><property name="left-attach">1</property><property name="top-attach">0</property></packing></child>
+                <child><object class="GtkLabel" id="power_time"><property name="label">—</property><property name="xalign">0</property><style><class name="stat-value"/></style></object><packing><property name="left-attach">1</property><property name="top-attach">1</property></packing></child>
+              </object>
+            </child>
+            <child><object class="GtkSeparator"/></child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Power profile</property>
+                    <property name="xalign">0</property>
+                    <style><class name="stat-label"/></style>
+                  </object>
+                  <packing><property name="expand">True</property><property name="fill">True</property></packing>
+                </child>
+                <child><object class="GtkLabel" id="power_profile_unavailable"><property name="label" translatable="yes">Unavailable</property><property name="no-show-all">True</property><property name="xalign">1</property><style><class name="stat-value"/></style></object></child>
+                <child><object class="GtkComboBoxText" id="power_profile"><property name="can-focus">True</property><property name="width-request">170</property><items><item id="power-saver" translatable="yes">Power saver</item><item id="balanced" translatable="yes">Balanced</item><item id="performance" translatable="yes">Performance</item></items></object></child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing><property name="expand">False</property><property name="fill">True</property></packing>
+    </child>
+  </object>
+</interface>
