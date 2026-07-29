@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=pardus-panel
+
+locale_dir = src/pardus_panel/locales/tr/LC_MESSAGES
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_build:
+	mkdir -p $(locale_dir)
+	msgfmt --check --output-file=$(locale_dir)/pardus-panel.mo po/tr.po
+	dh_auto_build
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f $(locale_dir)/pardus-panel.mo

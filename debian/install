@@ -1,0 +1,3 @@
+src/pardus_panel/data/applications/tr.org.pardus.panel.desktop usr/share/applications
+src/pardus_panel/data/icons/tr.org.pardus.panel.svg usr/share/icons/hicolor/scalable/apps
+src/pardus_panel/data/metainfo/tr.org.pardus.panel.metainfo.xml usr/share/metainfo
