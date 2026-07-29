@@ -17,7 +17,7 @@ Pardus Panel, Pardus için GTK 3 ile geliştirilmiş bir sistem izleme ve yönet
 - Sistem özetini görüntüleme
 - Türkçe ve İngilizce dil desteği
 
-## Ekran Görüntüleri
+## Bazı Ekran Görüntüleri
 
 ### Sistem Günlükleri
 
@@ -26,7 +26,7 @@ Pardus Panel, Pardus için GTK 3 ile geliştirilmiş bir sistem izleme ve yönet
 | Süreç İzleyicisi | systemd Servisleri |
 |:---:|:---:|
 | ![Pardus Panel süreç izleyicisi](screenshots/surecizleyicisi.png) | ![Pardus Panel systemd servisleri](screenshots/systemdservices.png) |
-| *Sistem Bilgisi** | **Başlangıç Uygulamaları** |
+| **Sistem Bilgisi** | **Başlangıç Uygulamaları** |
 | ![Pardus Panel güç ve batarya görünümü](screenshots/sysinf.png) | ![Pardus Panel başlangıç uygulamaları](screenshots/autostarts.png) |
 
 ## Gereksinimler
