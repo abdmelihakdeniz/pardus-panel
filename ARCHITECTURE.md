@@ -217,7 +217,7 @@ Pardus'un de kullandığı `powerprofilesctl` ile okunur ve değiştirilir.
 
 İşletim sistemi, açılış türü, makine adı, masaüstü oturumu, IP adresleri,
 kernel, CPU, bellek ve disk bilgileri toplanır. Ekran kartı bilgisi için
-gerekirse `lspci` kullanılır.
+mevcutsa `lspci` kullanılır.
 
 ## CSS ve Çeviri
 
